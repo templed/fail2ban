@@ -124,6 +124,8 @@ class DateDetector(object):
 			self.appendTemplate("%b %d, %Y %I:%M:%S %p")
 			# ASSP: Apr-27-13 02:33:06
 			self.appendTemplate("^%b-%d-%y %H:%M:%S")
+			# HLDS: L 27/02/2016 - 00:33:41:
+			self.appendTemplate("^L %d/%m/%Y - %H:%M:%S:")
 		finally:
 			self.__lock.release()
 
